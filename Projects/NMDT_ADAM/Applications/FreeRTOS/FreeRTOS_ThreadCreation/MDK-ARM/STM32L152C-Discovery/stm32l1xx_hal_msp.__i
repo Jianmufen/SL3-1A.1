@@ -1,0 +1,6 @@
+-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\Inc -I..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L1xx\Include -I..\..\..\..\..\..\Drivers\STM32L1xx_HAL_Driver\Inc -I..\..\..\..\..\..\Drivers\BSP\STM32L152C-Discovery -I..\..\..\..\..\..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I..\..\..\..\..\..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS -I..\..\..\..\..\..\Middlewares\Third_Party\FreeRTOS\Source\include --C99
+-I C:\Users\Administrator\Desktop\Application\STM32Cube_FW_L1_V1.6.0\Projects\NMDT_ADAM\Applications\FreeRTOS\FreeRTOS_ThreadCreation\MDK-ARM\RTE
+-I E:\ruanjian\MDK5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
+-I E:\ruanjian\MDK5\ARM\PACK\Keil\STM32L1xx_DFP\1.1.0
+-D__UVISION_VERSION="514" -D_RTE_ -DSTM32L1XX_MDP -DUSE_HAL_DRIVER -DSTM32L152xC -DUSE_STM32L152C_DISCO
+-o stm32l152c-discovery\stm32l1xx_hal_msp.o --omf_browse stm32l152c-discovery\stm32l1xx_hal_msp.crf --depend stm32l152c-discovery\stm32l1xx_hal_msp.d "..\Src\stm32l1xx_hal_msp.c"

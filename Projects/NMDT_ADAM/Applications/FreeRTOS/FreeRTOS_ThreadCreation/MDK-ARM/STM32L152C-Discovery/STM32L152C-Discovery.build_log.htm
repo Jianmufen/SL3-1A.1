@@ -1,0 +1,259 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: alientek ALIENTEK, alientek, LIC=P6F30-B6QWQ-NSTYQ-NADBU-EHBEX-H88UC
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.14.0.0
+Toolchain Path:  E:\ruanjian\MDK5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.14.0_KEIL
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+D:\简宝山\工作总结\SL3-1A雨量监测报警仪\程序\STM32Cube_FW_L1_V1.6.0\Projects\NMDT_ADAM\Applications\FreeRTOS\FreeRTOS_ThreadCreation\MDK-ARM\Project.uvprojx
+Project File Date:  04/05/2018
+
+<h2>Output:</h2>
+Rebuild target 'STM32L152C-Discovery'
+compiling tasks.c...
+compiling list.c...
+compiling timers.c...
+compiling queue.c...
+compiling cmsis_os.c...
+assembling startup_stm32l152xc.s...
+compiling stm32l152c_discovery.c...
+compiling system_stm32l1xx.c...
+compiling sys_time_module.c...
+..\Src\sys_time_module.c(26): warning:  #177-D: variable "minute_h" was declared but never referenced
+  static uint8_t minute_h = 0;                  /*连续60分钟雨量报警出现后，分钟计数*/
+..\Src\sys_time_module.c: 1 warning, 0 errors
+compiling usart_module.c...
+..\Src\usart_module.c(447): warning:  #181-D: argument is incompatible with corresponding format string conversion
+                                                sscanf(rx1_buffer+6,"%02u",&Usart_Date.Year);
+..\Src\usart_module.c(448): warning:  #181-D: argument is incompatible with corresponding format string conversion
+                                                sscanf(rx1_buffer+8,"%02u",&Usart_Date.Month);
+..\Src\usart_module.c(449): warning:  #181-D: argument is incompatible with corresponding format string conversion
+                                                sscanf(rx1_buffer+10,"%02u",&Usart_Date.Date);
+..\Src\usart_module.c(450): warning:  #181-D: argument is incompatible with corresponding format string conversion
+                                                sscanf(rx1_buffer+12,"%02u",&Usart_Time.Hours);
+..\Src\usart_module.c(451): warning:  #181-D: argument is incompatible with corresponding format string conversion
+                                                sscanf(rx1_buffer+14,"%02u",&Usart_Time.Minutes);
+..\Src\usart_module.c(452): warning:  #181-D: argument is incompatible with corresponding format string conversion
+                                                sscanf(rx1_buffer+16,"%02u",&Usart_Time.Seconds);
+..\Src\usart_module.c(501): warning:  #181-D: argument is incompatible with corresponding format string conversion
+                                                sscanf(rx1_buffer+7,"%02u",&Usart_Date.Year);
+..\Src\usart_module.c(502): warning:  #181-D: argument is incompatible with corresponding format string conversion
+                                                sscanf(rx1_buffer+9,"%02u",&Usart_Date.Month);
+..\Src\usart_module.c(503): warning:  #181-D: argument is incompatible with corresponding format string conversion
+                                                sscanf(rx1_buffer+11,"%02u",&Usart_Date.Date);
+..\Src\usart_module.c(504): warning:  #181-D: argument is incompatible with corresponding format string conversion
+                                                sscanf(rx1_buffer+13,"%02u",&Usart_Time.Hours);
+..\Src\usart_module.c(505): warning:  #181-D: argument is incompatible with corresponding format string conversion
+                                                sscanf(rx1_buffer+15,"%02u",&Usart_Time.Minutes);
+..\Src\usart_module.c(506): warning:  #181-D: argument is incompatible with corresponding format string conversion
+                                                sscanf(rx1_buffer+17,"%02u",&Usart_Time.Seconds);
+..\Src\usart_module.c(368): warning:  #177-D: variable "minute1" was declared but never referenced
+        unsigned int year1 = 0, month1 = 0, day1 = 0, hour1 = 0, minute1 = 0;
+..\Src\usart_module.c(1052): warning:  #181-D: argument is incompatible with corresponding format string conversion
+                                                sscanf(rx2_buffer+6,"%02u",&Usart_Date.Year);
+..\Src\usart_module.c(1053): warning:  #181-D: argument is incompatible with corresponding format string conversion
+                                                sscanf(rx2_buffer+8,"%02u",&Usart_Date.Month);
+..\Src\usart_module.c(1054): warning:  #181-D: argument is incompatible with corresponding format string conversion
+                                                sscanf(rx2_buffer+10,"%02u",&Usart_Date.Date);
+..\Src\usart_module.c(1055): warning:  #181-D: argument is incompatible with corresponding format string conversion
+                                                sscanf(rx2_buffer+12,"%02u",&Usart_Time.Hours);
+..\Src\usart_module.c(1056): warning:  #181-D: argument is incompatible with corresponding format string conversion
+                                                sscanf(rx2_buffer+14,"%02u",&Usart_Time.Minutes);
+..\Src\usart_module.c(1057): warning:  #181-D: argument is incompatible with corresponding format string conversion
+                                                sscanf(rx2_buffer+16,"%02u",&Usart_Time.Seconds);
+..\Src\usart_module.c(1106): warning:  #181-D: argument is incompatible with corresponding format string conversion
+                                                sscanf(rx2_buffer+7,"%02u",&Usart_Date.Year);
+..\Src\usart_module.c(1107): warning:  #181-D: argument is incompatible with corresponding format string conversion
+                                                sscanf(rx2_buffer+9,"%02u",&Usart_Date.Month);
+..\Src\usart_module.c(1108): warning:  #181-D: argument is incompatible with corresponding format string conversion
+                                                sscanf(rx2_buffer+11,"%02u",&Usart_Date.Date);
+..\Src\usart_module.c(1109): warning:  #181-D: argument is incompatible with corresponding format string conversion
+                                                sscanf(rx2_buffer+13,"%02u",&Usart_Time.Hours);
+..\Src\usart_module.c(1110): warning:  #181-D: argument is incompatible with corresponding format string conversion
+                                                sscanf(rx2_buffer+15,"%02u",&Usart_Time.Minutes);
+..\Src\usart_module.c(1111): warning:  #181-D: argument is incompatible with corresponding format string conversion
+                                                sscanf(rx2_buffer+17,"%02u",&Usart_Time.Seconds);
+..\Src\usart_module.c(1002): warning:  #177-D: variable "minute1" was declared but never referenced
+        unsigned int year1 = 0, month1 = 0, day1 = 0, hour1 = 0, minute1 = 0;
+..\Src\usart_module.c: 26 warnings, 0 errors
+compiling storage_moudle.c...
+..\Src\storage_moudle.c(86): warning:  #177-D: variable "byte_i" was declared but never referenced
+        uint32_t byte_i = 0;
+..\Src\storage_moudle.c(88): warning:  #550-D: variable "fre_sect" was set but never used
+    DWORD fre_clust, fre_sect, tot_sect;
+..\Src\storage_moudle.c(88): warning:  #550-D: variable "tot_sect" was set but never used
+    DWORD fre_clust, fre_sect, tot_sect;
+..\Src\storage_moudle.c(488): warning:  #177-D: variable "byte_s" was declared but never referenced
+        uint32_t byte_s=0;
+..\Src\storage_moudle.c(489): warning:  #177-D: variable "res_s" was declared but never referenced
+    FRESULT res_s = FR_OK;
+..\Src\storage_moudle.c(490): warning:  #177-D: variable "pathfile" was declared but never referenced
+    uint8_t pathfile[24]={0};
+..\Src\storage_moudle.c(543): warning:  #177-D: variable "month" was declared but never referenced
+    uint8_t month=0;
+..\Src\storage_moudle.c(733): warning:  #111-D: statement is unreachable
+                        return 0;
+..\Src\storage_moudle.c(849): warning:  #111-D: statement is unreachable
+                        return 0;
+..\Src\storage_moudle.c: 9 warnings, 0 errors
+compiling display_module.c...
+..\Src\display_module.c(1970): warning:  #177-D: variable "highlight" was declared but never referenced
+                uint8_t highlight=false;
+..\Src\display_module.c(2271): warning:  #177-D: variable "j" was declared but never referenced
+                        uint8_t i = 0, j = 0;
+..\Src\display_module.c(4065): warning:  #9-D: nested comment is not allowed
+  /*                    
+..\Src\display_module.c(4066): warning:  #9-D: nested comment is not allowed
+                        /*第四行*/
+..\Src\display_module.c(4090): warning:  #9-D: nested comment is not allowed
+  /*                    
+..\Src\display_module.c(4091): warning:  #9-D: nested comment is not allowed
+                        /*反显*/
+..\Src\display_module.c(13): warning:  #550-D: variable "screen_time" was set but never used
+  static char screen_time = 0;                  /*在当前屏幕显示的时间，单位秒钟*/
+..\Src\display_module.c(2269): warning:  #177-D: function "OLED_Refresh_Gram_Main" was declared but never referenced
+  static void OLED_Refresh_Gram_Main(void)
+..\Src\display_module.c(4513): warning:  #177-D: function "turn_off_display" was declared but never referenced
+  __STATIC_INLINE void turn_off_display(void)
+..\Src\display_module.c: 9 warnings, 0 errors
+compiling main.c...
+compiling stm32l1xx_it.c...
+compiling usart.c...
+compiling rtc.c...
+compiling iwdg.c...
+compiling time_related.c...
+compiling sd_io_low.c...
+compiling tim.c...
+..\Src\tim.c(118): warning:  #177-D: variable "GPIO_InitStruct" was declared but never referenced
+    GPIO_InitTypeDef GPIO_InitStruct;
+..\Src\tim.c(160): warning:  #177-D: variable "GPIO_InitStruct" was declared but never referenced
+    GPIO_InitTypeDef GPIO_InitStruct;
+..\Src\tim.c: 2 warnings, 0 errors
+compiling sensor.c...
+compiling pcf8563.c...
+compiling gpio.c...
+compiling lcd.c...
+..\Src\lcd.c(61): warning:  #177-D: variable "temp" was declared but never referenced
+                        uint8_t i = 0, temp = 0;
+..\Src\lcd.c(186): warning:  #177-D: variable "p" was declared but never referenced
+                        char *p;
+..\Src\lcd.c(560): warning:  #177-D: variable "k" was declared but never referenced
+                        uint8_t i=0,j=0,k=0;
+..\Src\lcd.c(583): warning:  #177-D: variable "k" was declared but never referenced
+                        uint8_t i=0,j=0,k=0;
+..\Src\lcd.c(707): warning:  #177-D: variable "k" was declared but never referenced
+                        uint8_t i = 0, j = 0, k = 0, l = 0;
+..\Src\lcd.c(707): warning:  #177-D: variable "l" was declared but never referenced
+                        uint8_t i = 0, j = 0, k = 0, l = 0;
+..\Src\lcd.c(772): warning:  #177-D: variable "i" was declared but never referenced
+                        uint8_t i=0;
+..\Src\lcd.c(884): warning:  #177-D: variable "n" was declared but never referenced
+                        uint8_t i,n;
+..\Src\lcd.c(961): warning:  #177-D: variable "i" was declared but never referenced
+                unsigned int i;
+..\Src\lcd.c(1001): warning:  #177-D: variable "i" was declared but never referenced
+                unsigned int i;
+..\Src\lcd.c(1142): warning:  #177-D: variable "x0" was declared but never referenced
+        uint8_t y0=y,x0=x;
+..\Src\lcd.c: 11 warnings, 0 errors
+compiling eeprom.c...
+compiling stm32l1xx_hal_cortex.c...
+compiling stm32l1xx_hal.c...
+compiling stm32l1xx_hal_rcc_ex.c...
+compiling stm32l1xx_hal_pwr.c...
+compiling stm32l1xx_hal_pwr_ex.c...
+compiling stm32l1xx_hal_rcc.c...
+compiling stm32l1xx_hal_gpio.c...
+compiling stm32l1xx_hal_adc.c...
+compiling stm32l1xx_hal_adc_ex.c...
+compiling stm32l1xx_hal_flash.c...
+compiling stm32l1xx_hal_flash_ex.c...
+compiling stm32l1xx_hal_iwdg.c...
+compiling stm32l1xx_hal_rtc.c...
+compiling stm32l1xx_hal_rtc_ex.c...
+compiling stm32l1xx_hal_spi.c...
+compiling stm32l1xx_hal_spi_ex.c...
+compiling stm32l1xx_hal_tim.c...
+compiling stm32l1xx_hal_tim_ex.c...
+compiling stm32l1xx_hal_uart.c...
+compiling stm32l1xx_hal_usart.c...
+compiling stm32l1xx_hal_dma.c...
+compiling stm32l1xx_hal_i2c.c...
+compiling stm32l1xx_hal_sd.c...
+compiling stm32l1xx_hal_smartcard.c...
+compiling stm32l1xx_ll_sdmmc.c...
+compiling stm32l1xx_ll_spi.c...
+compiling stm32l1xx_ll_usart.c...
+compiling stm32l1xx_ll_rtc.c...
+compiling stm32l1xx_ll_rcc.c...
+compiling stm32l1xx_ll_pwr.c...
+compiling stm32l1xx_ll_gpio.c...
+compiling stm32l1xx_ll_i2c.c...
+compiling port.c...
+compiling heap_4.c...
+compiling diskio.c...
+compiling ff.c...
+compiling ff_gen_drv.c...
+compiling sd_diskio.c...
+compiling syscall.c...
+compiling unicode.c...
+compiling stm32_adafruit_sd.c...
+..\..\..\..\..\..\Drivers\BSP\Adafruit_Shield\stm32_adafruit_sd.c(450): warning:  #177-D: variable "counter" was declared but never referenced
+    uint32_t counter = 0, offset = 0;
+..\..\..\..\..\..\Drivers\BSP\Adafruit_Shield\stm32_adafruit_sd.c(450): warning:  #177-D: variable "offset" was declared but never referenced
+    uint32_t counter = 0, offset = 0;
+..\..\..\..\..\..\Drivers\BSP\Adafruit_Shield\stm32_adafruit_sd.c(451): warning:  #177-D: variable "rvalue" was declared but never referenced
+    uint8_t rvalue = MSD_ERROR;
+..\..\..\..\..\..\Drivers\BSP\Adafruit_Shield\stm32_adafruit_sd.c(502): warning:  #177-D: variable "counter" was declared but never referenced
+    uint32_t counter = 0, offset = 0;
+..\..\..\..\..\..\Drivers\BSP\Adafruit_Shield\stm32_adafruit_sd.c(502): warning:  #177-D: variable "offset" was declared but never referenced
+    uint32_t counter = 0, offset = 0;
+..\..\..\..\..\..\Drivers\BSP\Adafruit_Shield\stm32_adafruit_sd.c(503): warning:  #177-D: variable "rvalue" was declared but never referenced
+    uint8_t rvalue = MSD_ERROR;
+..\..\..\..\..\..\Drivers\BSP\Adafruit_Shield\stm32_adafruit_sd.c(638): warning:  #550-D: variable "Capacity" was set but never used
+        uint32_t Capacity = 0;          //SD卡容量
+..\..\..\..\..\..\Drivers\BSP\Adafruit_Shield\stm32_adafruit_sd.c(907): warning:  #177-D: function "SD_GetDataResponse" was declared but never referenced
+  static uint8_t SD_GetDataResponse(void)
+..\..\..\..\..\..\Drivers\BSP\Adafruit_Shield\stm32_adafruit_sd.c: 8 warnings, 0 errors
+linking...
+Program Size: Code=55296 RO-data=4640 RW-data=724 ZI-data=26084  
+FromELF: creating hex file...
+After Build - User command #1: E:\ruanjian\MDK5\ARM\ARMCC\bin\fromelf.exe     --bin -o   D:\简宝山\工作总结\SL3-1A雨量监测报警仪\程序\STM32Cube_FW_L1_V1.6.0\Projects\NMDT_ADAM\Applications\FreeRTOS\FreeRTOS_ThreadCreation\MDK-ARM\STM32L152C-Discovery\STM32L152C-Discovery.bin      D:\简宝山\工作总结\SL3-1A雨量监测报警仪\程序\STM32Cube_FW_L1_V1.6.0\Projects\NMDT_ADAM\Applications\FreeRTOS\FreeRTOS_ThreadCreation\MDK-ARM\STM32L152C-Discovery\STM32L152C-Discovery.axf
+".\STM32L152C-Discovery\STM32L152C-Discovery.axf" - 0 Error(s), 66 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.2.0.pack
+                ARM::CMSIS:CORE:3.40.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.40.0
+
+<h2>Collection of Component include folders:</h2>
+  D:\简宝山\工作总结\SL3-1A雨量监测报警仪\程序\STM32Cube_FW_L1_V1.6.0\Projects\NMDT_ADAM\Applications\FreeRTOS\FreeRTOS_ThreadCreation\MDK-ARM\RTE
+  E:\ruanjian\MDK5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
+  E:\ruanjian\MDK5\ARM\PACK\Keil\STM32L1xx_DFP\1.1.0
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.40.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+</pre>
+</body>
+</html>
